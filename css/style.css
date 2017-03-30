@@ -1,41 +1,208 @@
-body{
-  background-color: black;
+html,body {
+    height:97%;
+    background-color: #C4DFE2;
 }
-.mainmenu{
-  text-align: center;
-  background-color: yellow;
-  margin-top: 3%;
-  margin-bottom: 3%;
+.upSide{
+	background-color: #C4DFE2;
+	height: 100%;
 }
-
-.logo{
-  position: relative;
-  left: 20%;
-  top: 2px;
-  margin-bottom: 20px;
+.downSide{
+	background-color: #2A8B96;
+	height: 100%;
 }
 
-h5{
-  display: inline-block;
+#downSide{
+	position: relative;
+	top: 30%;
+	background-color: #2A8B96;
+	height: 170%;
+
+}
+
+.row {
+    width:101%;
+    height:50%;
+}
+
+#logo{
+	z-index: +1;
+	position: absolute;
+	bottom: -33px;
+	right: -10px;
+	border-radius: 20%;
+}
+
+.myImg{
+	z-index: +1;
+	border-width: thin;
+	border-style: double;
+	position: absolute;
+	top: 15%;
+	left: 20%;
+	border-radius: 50%;
+}
+
+.someInfo{
+	z-index: +1;
+	position: absolute;
+	top: 35%;
+	left: 40%;
+}
+
+.header-wrapper {
+    background: rgba(0, 0, 0, 0.33);
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.55), inset 0 -1px 0 rgba(255,255,255,0.09);
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.55), inset 0 -1px 0 rgba(255,255,255,0.09);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.55), inset 0 -1px 0 rgba(255,255,255,0.09);
+    position: relative;
+    z-index: 101;
+}
+.header {
+    width: 1010px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    padding-top: 22px;
+}
+
+/*	MENU
+/*-----------------------------------------------------------------------------------*/
+#menu-wrapper .menu {
+    list-style: none;
+    float: right;
+    position: relative;
+    z-index: 1003;
+    padding: 30px 0;
+}
+#menu-wrapper .menu ul {
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    overflow: inherit;
+}
+#menu-wrapper .menu ul li {
+    position: relative;
+    float: left;
+    background: none;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+#menu-wrapper .menu ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 1;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    color: #2c2c2c;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    padding: 0;
+    font-weight: bold;
+}
+#menu-wrapper .menu ul li.active a,
+#menu-wrapper .menu ul li a:hover {
+    color: #86aca3
+}
+#menu-wrapper .menu ul li.active li a {
+    color: #dedede
+}
+#menu-wrapper .menu ul li ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    visibility: hidden;
+    width: 160px;
+    padding: 31px 0 0 0;
+}
+#menu-wrapper .menu ul li ul ul {
+    padding: 0;
+}
+#menu-wrapper .menu ul li ul li {
+    display: list-item;
+    float: none;
+    background-color: #2c2c2c;
+    padding: 0 15px;
+    margin: 0;
+}
+#menu-wrapper .menu ul li ul li:first-child {
+    background-image: none
+}
+#menu-wrapper .menu ul li ul li ul {
+    top: 0
+}
+#menu-wrapper .menu ul li ul li a {
+    margin: 0;
+    border: none;
+    padding: 13px 0;
+    line-height: 1;
+    font-size: 13px;
+    background-image: url(style/images/line.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+#menu-wrapper .menu ul li ul li:first-child a {
+    background: none
+}
+#menu-wrapper .menu ul li ul li a:hover {
+    color: #86aca3
+}
+* html .menu {
+    height: 1%
+}
+.selectnav {
+    display: none;
+    width: 280px;
+    margin: 0 auto;
+}
+
+/*An Hour*/
+
+#test{
+	position: absolute;
+	bottom: 180px;
+	right: 40%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:#86aca3;
+    letter-spacing:2px;
+    font-size:70px;
 }
 
 
-/*<footer>
-  <div class="logo">
-    <h3>Keep Connected</h3>
-    <div id="link">
-      <a href="https://www.facebook.com/Mohammad.Daylaky"><img src="https://images.seeklogo.net/2016/09/facebook-icon-preview-200x200.png" alt="facebook" width="40"></a>
-          <h5> Follow me on Facebook</h5>
-    </div>
-    <div id="link">
-      <a href="https://twitter.com/MDaylaky"><img src="http://goinkscape.com/wp-content/uploads/2015/07/twitter-logo-final.png" alt="twitter" width="30"></a>
-          <h5> Follow me on Twitter</h5>
-    </div>
-    <div id="link">
-      <a  href="https://www.linkedin.com/in/mohammad-daylaki/">  <img src="http://thomaszuckerscharff.com/wp-content/uploads/2015/09/linkedin-logo.png" alt="linkedin" width="30"></a>
-          <h5> Follow me on LinkedIn</h5>
-    </div>
-    <div id="link">
-      <a  href="https://github.com/Mohammad-Daylaki"><img src="http://itnotes.me/images/gitHub-logo.png" alt="github" width="30"></a>
-          <h5>  Follow me on Github</h5>
-    </div>*/
+#text{
+    text-align:center;
+    color:white;
+    letter-spacing:3px;
+}
+#text2{
+    margin-top:10%;
+    text-align:center;
+    font-family:Arial;
+    color:white;
+    letter-spacing:3px;
+    word-spacing:4px;
+    text-shadow:5px 3px 20px lightskyblue;
+    
+}
+#b1{
+    text-align:center;
+    font-weight:bold;
+}
+#ttt{
+	position: absolute;
+	bottom: 170px;
+	right: 42%;
+    color:black;
+    border:2px lightskyblue;
+    font-family:serif;
+    border-radius:30px;
+}
+#all{
+    padding:5px;
+    border:5px solid lightskyblue;
+    font-family:serif;
+    border-radius:30px;
+}
