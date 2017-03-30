@@ -1,0 +1,41 @@
+body{
+  background-color: black;
+}
+.mainmenu{
+  text-align: center;
+  background-color: yellow;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.logo{
+  position: relative;
+  left: 20%;
+  top: 2px;
+  margin-bottom: 20px;
+}
+
+h5{
+  display: inline-block;
+}
+
+
+/*<footer>
+  <div class="logo">
+    <h3>Keep Connected</h3>
+    <div id="link">
+      <a href="https://www.facebook.com/Mohammad.Daylaky"><img src="https://images.seeklogo.net/2016/09/facebook-icon-preview-200x200.png" alt="facebook" width="40"></a>
+          <h5> Follow me on Facebook</h5>
+    </div>
+    <div id="link">
+      <a href="https://twitter.com/MDaylaky"><img src="http://goinkscape.com/wp-content/uploads/2015/07/twitter-logo-final.png" alt="twitter" width="30"></a>
+          <h5> Follow me on Twitter</h5>
+    </div>
+    <div id="link">
+      <a  href="https://www.linkedin.com/in/mohammad-daylaki/">  <img src="http://thomaszuckerscharff.com/wp-content/uploads/2015/09/linkedin-logo.png" alt="linkedin" width="30"></a>
+          <h5> Follow me on LinkedIn</h5>
+    </div>
+    <div id="link">
+      <a  href="https://github.com/Mohammad-Daylaki"><img src="http://itnotes.me/images/gitHub-logo.png" alt="github" width="30"></a>
+          <h5>  Follow me on Github</h5>
+    </div>*/
