@@ -53,3 +53,7 @@ document.getElementById("ttt").innerHTML = day + ", " + date + "." + month + "."
 }
 setTimeout(printTime, 1);
 setInterval(printTime, 1000);
+
+
+// -----------------------------------------------------------
+//Ajax---------
