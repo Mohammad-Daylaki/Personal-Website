@@ -5,12 +5,12 @@ html,body {
 .upSide{
     z-index: -2;
 	background-color: #C4DFE2;
-	height: 100%;
+	height: 110%;
 }
 .downSide{
     z-index: -2;
 	background-color: #2A8B96;
-	height: 100%;
+	height: 110%;
 }
 
 #downSide{
@@ -214,6 +214,13 @@ h4:hover, h5:hover {
 }
 
 /*----------------------------------------------------------------------------------*/
+
+#img {
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
 .col-sm-6 {
     background-color: #EEF6FD;
     position: relative;
@@ -312,7 +319,7 @@ h4:hover, h5:hover {
 }
 .currentresult{
    position: absolute;
-   top: 130px;
+   top: 115px;
    right: 790px;
    background-color: #DEC5BA;
     width: 400px;
@@ -336,6 +343,53 @@ h4:hover, h5:hover {
     border: solid green;
     padding: 25px;
     margin: 25px;
+}
+#current{
+    position: relative;
+    top: 55px;
+    left: 30px;
+}
+.circle:hover {
+    background-color: lightgrey;
+}
+.circle {
+    z-index: 1;
+    position: absolute;
+    top: 49%;
+    right: 69%;
+    background-color:#94C5CC;
+    height:200px;
+    width: 200px;
+    border-style: groove;
+    border-width: 1px;
+    border-color: black;
+    -moz-border-radius: 150px 0 0 150px;
+    border-radius: 50%;
+     -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(0deg);
+}
+.circle2 {
+    z-index: 1;
+    position: absolute;
+    top: 49%;
+    right: 15%;
+    background-color:#94C5CC;
+    height:200px;
+    width: 200px;
+    border-style: groove;
+    border-width: 1px;
+    border-color: black;
+    -moz-border-radius: 150px 0 0 150px;
+    border-radius: 50%;
+     -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(0deg);
+}
+#favorite{
+    position: relative;
+    top: 55px;
+    left: 30px;
 }
 .half-circle2{
     background-color: red;
@@ -422,4 +476,9 @@ h4:hover, h5:hover {
 
 #reponame:hover{
     color: white;
+}
+#closed{
+    position: relative;
+    bottom: 470px;
+    left: 310px;
 }
