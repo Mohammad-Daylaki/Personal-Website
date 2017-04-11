@@ -3,6 +3,7 @@ $(document).ready(function() {
     $(".currentresult").hide()
 })
 
+
 function submittedcurrent() {
 	$(".circle").click(function(event) {
 	event.preventDefault();
@@ -11,13 +12,12 @@ function submittedcurrent() {
     var language=$('#language').val();
     var html_url=$('#html_url').val();
     var updated_at= $("#updated_at").val();
-    var fork= $("#fork").val();
-    getAjax(name,language,html_url,updated_at,fork);
+    getAjax(name,language,html_url,updated_at);
 		event.stopPropagation();
 	})
 }
 
-function getAjax(name,language,html_url,updated_at,fork) {
+function getAjax(name,language,html_url,updated_at) {
 		event.preventDefault();
 	var url="https://api.github.com/users/Mohammad-Daylaki/repos?sort=updated&per_page=5"
 
@@ -26,22 +26,30 @@ function getAjax(name,language,html_url,updated_at,fork) {
 		type: "GET",
 		dataType: "json",
 		success: function(response){
-
+			$(".currentresult").html('');
 			$(".currentresult").fadeIn("slow", showResult(response));
 			var	pageClose = $('<img>').attr('src','http://www.vw-automotores.com.mx/img/exit.png')
                            .attr('id', 'closed')
                            .attr('width', '30')
 			$(".currentresult").append(pageClose)
+			$('#closed').append(halfColor())
 			paggeClosed();
 		}
 	})
 
 }
 
+function halfColor() {
+	$( "#half-circle" ).removeClass( "half-circle" ).addClass( "half-circle2" );
+}
+
 function paggeClosed() {
 	$('#closed').click(function(){
+		console.log("hg")
 		$(".currentresult").fadeOut("slow");
 		$(".circle").fadeIn("slow");
+	$( "#half-circle" ).removeClass( "half-circle2" ).addClass( "half-circle" );
+
 	})
 }
 
