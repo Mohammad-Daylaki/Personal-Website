@@ -58,7 +58,7 @@ var gaurdianUrl= $('<a>').attr('href', repo.url)
                       .attr('role', 'button')
                       .text('See whole artice ...');
 
-	$(".caption").append(gaurdianTitle,gaurdianAuthor,gaurdianImage,gaurdianPublishedAt,"<br>",gaurdianDescription,"<br>",gaurdianUrl,"<br>","<br>","<hr id='newhr'>");
+	$(".caption").append(gaurdianTitle,gaurdianAuthor,gaurdianImage,gaurdianPublishedAt,gaurdianDescription,"<br>",gaurdianUrl,"<br>","<br>","<hr id='newhr'>");
 			})
 }
 

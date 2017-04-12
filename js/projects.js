@@ -8,6 +8,8 @@ function submittedcurrent() {
 	$(".circle").click(function(event) {
 	event.preventDefault();
 	$(".circle").hide()
+	$("#current").hide();
+
     var name=$('#name').val();
     var language=$('#language').val();
     var html_url=$('#html_url').val();
@@ -32,15 +34,10 @@ function getAjax(name,language,html_url,updated_at) {
                            .attr('id', 'closed')
                            .attr('width', '30')
 			$(".currentresult").append(pageClose)
-			$('#closed').append(halfColor())
 			paggeClosed();
 		}
 	})
 
-}
-
-function halfColor() {
-	$( "#half-circle" ).removeClass( "half-circle" ).addClass( "half-circle2" );
 }
 
 function paggeClosed() {
@@ -48,7 +45,7 @@ function paggeClosed() {
 		console.log("hg")
 		$(".currentresult").fadeOut("slow");
 		$(".circle").fadeIn("slow");
-	$( "#half-circle" ).removeClass( "half-circle2" ).addClass( "half-circle" );
+	    $("#current").fadeIn("slow");
 
 	})
 }

@@ -7,7 +7,9 @@ $(document).ready(function() {
 function submittedFav() {
 	$(".circle2").click(function(event) {
 	event.preventDefault();
-	$(".circle2").hide()
+	$(".circle2").hide();
+	$("#favorite").hide();
+
     var fav_name=$('#fav_name').val();
     var fav_language=$('#fav_language').val();
     var fav_url=$('#fav_url').val();
@@ -28,26 +30,20 @@ function getFavAjax(fav_name,fav_language,fav_url) {
 			$(".favresult").html('');
 			$(".favresult").fadeIn("slow", showFavResult(response));
 			var	pagefavClose = $('<img>').attr('src','http://www.vw-automotores.com.mx/img/exit.png')
-                           .attr('id', '<fav_>																																																				</fav_>closed')
+                           .attr('id', 'fav_closed')
                            .attr('width', '30')
 			$(".favresult").append(pagefavClose)
-			$('#fav_closed').append(halfFavColor())
 			paeClosed();
 		}
 	})
 
 }
 
-function halfFavColor() {
-	$( "#half-circle1" ).removeClass( "half-circle1" ).addClass( "half-circle3" );
-}
-
 function paeClosed() {
 	$('#fav_closed').click(function(){
 		$(".favresult").fadeOut("slow");
 		$(".circle2").fadeIn("slow");
-	$( "#half-circle1" ).removeClass( "half-circle3" ).addClass( "half-circle1" );
-
+	    $("#favorite").fadeIn("slow");
 	})
 }
 
@@ -59,7 +55,7 @@ var linkName= $('<a>').attr('href', repo.fav_url)
                       .attr('target', '_blank');
 var repoLang = $('<h5>').text(repo.fav_language)
                         .attr('id', 'favLanguage')
-	$(".favresult").append(linkName ,repoLang, "<br>");
+	$(".favresult").append("<br>",linkName ,repoLang, "<br>");
 	// $(".currentresult").append('<br>');
 			})
 }
