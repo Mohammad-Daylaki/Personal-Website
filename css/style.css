@@ -832,7 +832,7 @@ hr{
     border-radius: 20px;
 }
 
-#vidTitle{
+.vidTitle{
     font-family: 'Arsenal', sans-serif;
     color: black;
     font-size: 25px;
@@ -849,7 +849,7 @@ hr{
     opacity: 0.98;
 }
 
-#vidImage{
+.vidImage{
     position: relative;
     left: 12%;
     top: -20px;

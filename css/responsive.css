@@ -1,0 +1,154 @@
+
+@media only screen and (min-width: 760px) and (max-width: 991px) {
+     #fixed{
+		    z-index: -3;
+		    position: fixed;
+		    width: 90%;
+		    left: 3%;
+		    margin-right: 10px;
+		    margin-left: 10px;
+		    border-style: solid;
+		    border-color: #D3E7A0;
+		    opacity: 0.8;
+		    box-shadow: 0px 8px 35px 0px black;
+     }
+     .someInfo ,#hi ,#test ,#ttt{
+     	display: none;
+     }
+     #mx{
+     	height: 100%;
+     }
+     img.myImg{
+     	position: relative;
+     	top: 300px;
+     }
+      .social-icon{
+     	position: relative;
+     	display: inline-flex;
+     	left: 30%;
+     	top: -50px;
+     }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .about-section img {
+        position: inherit;
+     }
+	 
+     .call-to-action h2 {
+        font-size: 20px;
+	 }
+	 
+     .space-set {
+        margin-top: 80px;
+	 }
+	 
+     .footer-section p {
+         text-align: center !important;
+     }
+}
+
+
+@media only screen and (max-width: 760px) {
+     #fixed{
+		    z-index: -3;
+		    position: fixed;
+		    width: 90%;
+		    left: 3%;
+		    height: 15%;
+		    border-style: solid;
+		    border-color: #D3E7A0;
+		    opacity: 0.8;
+		    box-shadow: 0px 8px 35px 0px black;
+     }
+     #fixed a{
+     	margin-bottom: 50px;
+     }
+     .someInfo ,#hi ,#test ,#ttt ,div.logo{
+     	display: none;
+     }
+      #mx{
+     	height: 100%;
+     }
+
+     img.myImg{
+     	position: relative;
+     	top: 300px;
+     }
+      .social-icon{
+     	position: relative;
+     	display: inline-flex;
+     	left: 20%;
+     	top: -50px;
+     }
+}
+
+
+@media only screen and (max-width: 584px) {
+     #fixed{
+		    z-index: -3;
+		    position: absolute;
+		    width: 60%;
+		    height: 150px;
+		    left: 18%;
+		    top: 200px;
+		    border-style: solid;
+		    border-color: #D3E7A0;
+		    opacity: 0.8;
+		    box-shadow: 0px 8px 35px 0px black;
+     }
+     #fixed a{
+     	margin-bottom: 50px;
+     	position: relative;
+     	left: 20px;
+     }
+     .someInfo ,#hi ,#test ,#ttt ,div.logo{
+     	display: none;
+     }
+
+     img.myImg{
+     	position: relative;
+     	top: 0px;
+     }
+      .social-icon{
+     	position: relative;
+     	display: inline-flex;
+     	left: 20%;
+     	top: 270px;
+     }
+}
+
+
+@media only screen and (max-width: 449px) {
+     #fixed{
+		    z-index: -3;
+		    position: absolute;
+		    width: 20%;
+		    height: 450px;
+		    left: 5%;
+		    border-style: solid;
+		    border-color: #D3E7A0;
+		    opacity: 0.8;
+		    box-shadow: 0px 8px 35px 0px black;
+     }
+     #fixed a{
+     	margin-bottom: 50px;
+     	position: relative;
+     	left: 20px;
+     }
+     .someInfo ,#hi ,#test ,#ttt ,div.logo{
+     	display: none;
+     }
+
+     img.myImg{
+     	position: relative;
+     	top: 30px;
+     }
+      .social-icon{
+     	position: relative;
+     	display: inline-flex;
+     	left: 20%;
+     	top: 270px;
+     }
+}
